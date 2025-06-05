@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fa9c87ce-73c5-4409-87fe-744f60184728">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[Select * from bodega]]>
+	</queryString>
+	<field name="pkid" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fkidTipobodega" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombre" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="direccion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="estado" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="31" splitType="Stretch">
+			<staticText>
+				<reportElement x="118" y="2" width="100" height="20" uuid="b2ad2d14-b85c-49f9-86b1-4cb624d28e77"/>
+				<text><![CDATA[fkidTipobodega]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="2" width="100" height="20" uuid="566200cf-4974-424f-8a96-c62ac3e7031d"/>
+				<text><![CDATA[pkid]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="230" y="2" width="100" height="20" uuid="d9c6d6fa-38df-4c26-9cd1-308359b0b8f6"/>
+				<text><![CDATA[nombre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="334" y="2" width="100" height="20" uuid="f4697be9-c7c7-4137-83c7-7dae67c024af"/>
+				<text><![CDATA[direccion]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="455" y="2" width="100" height="20" uuid="e8a6c323-2667-4172-ab08-2e11492e596c"/>
+				<text><![CDATA[estado]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="69" splitType="Stretch">
+			<textField>
+				<reportElement x="118" y="23" width="100" height="20" uuid="98300e09-b9d9-489a-91ec-b3d8be72208c"/>
+				<textFieldExpression><![CDATA[$F{fkidTipobodega}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="7" y="23" width="100" height="20" uuid="4fa13fe1-82c5-462a-99b4-9b5c6cd1fb08"/>
+				<textFieldExpression><![CDATA[$F{pkid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="230" y="23" width="100" height="20" uuid="19079b25-3901-4d87-839c-90d7488d647b"/>
+				<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="334" y="23" width="100" height="20" uuid="1e143302-d378-4e38-8400-3d4d00372c96"/>
+				<textFieldExpression><![CDATA[$F{direccion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="455" y="23" width="100" height="20" uuid="6aef5a82-14cc-4389-8471-abb46ed62fc8"/>
+				<textFieldExpression><![CDATA[$F{estado}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

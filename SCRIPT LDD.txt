@@ -1,0 +1,7 @@
+CREATE TABLE bodega (
+  pkid int NOT NULL AUTO_INCREMENT,
+  fkidTipobodega varchar(15),
+  nombre varchar(30),
+  direccion varchar(65),
+  estado varchar(1),
+  PRIMARY KEY (pkid));
